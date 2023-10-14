@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --color-primary: #202A25;
+    --color-secondary: #772014;
+    --color-tertiary: #CBAC88;
+    --color-danger:red;
+    --color-warning: yellow;
+    --color-white: #fff;
+    --color-light:  rgba(132, 139, 200, 0.18);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* html { 
+    font-size: 14px;
+} */
+
+h1 { 
+    font-weight:800;
+    font-size: 1.8rem;
+}
+h2 { 
+    font-weight:600;
+    font-size: 1.4rem;
+}
+h3 { 
+    font-weight:500;
+    font-size: .87rem;
+}
+
+.container{
+    display: grid;
+    width:96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 12rem auto 23rem;
+}
+
+aside {
+    height: 50vh;
+}
+
+aside .toggle { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+/* aside .toggle .close { 
+    padding-right:1rem;
+    display: none; 
+} */
+
+
+
+aside .sidebar { 
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;/* var(--color-white); */
+    box-shadow: var(--box-shadow);
+    border-radius: 15px;
+    height: 25vh;
+    width: 20vh;
+    position: relative;
+    top: 1.5rem;
+    transition:all 0.3 ease;
+    
+}
+
+aside .sidebar:hover {
+    box-shadow: var(--color-white);
+    transition: all .3 ease;
+
+}
+
+aside .sidebar a{
+    display: flex;
+    align-items: center;
+    color: var(--color-info-dark);
+    height: 33%;
+    /* gap: 1rem; */
+    position: relative;
+    margin-left: 1rem;
+    transition: all 0.3s ease;
+    text-align: center;
+
+}
+
+aside .sidebar h3 {
+    position: relative;
+    bottom: 6px;
+    display: inline;
+}
+
+/* aside .sidebar a h3 {
+    display: inline-block;
+    margin-left: 8px;
+
+} */
+
+aside .sidebar a span{
+    font-size: 1.6rem;
+    /* transition: all 0.3s ease; */
+
+}
+
+aside .sidebar a span h3 { 
+    
+}
+
+aside .sidebar a:hover{
+    color: var(--color-secondary);
+
+}
+
+main{
+    top:1.5rem;
+}
+
+main .welcome { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.6rem;
+}
+main .welcome > div {
+    background-color: var(--color-secondary);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    /* cursor: pointer; */
+    /* transition: all 0.3s ease; */
+}
